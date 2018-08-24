@@ -4,11 +4,11 @@ Locating Safe Assembly Areas: The case of Earthquake preparedness in Beylikduzu,
 # Story
 
 Earthquake is the major disaster type in Turkey that accounts for 61% of the collapsed buildings among all disaster 
-types in the last 70 years [Ergunay 1999]. In the aftermath of the big Istanbul earthquake on August 17, 1999, which claimed 
+types in the last 70 years [1]. In the aftermath of the big Istanbul earthquake on August 17, 1999, which claimed 
 lives of tens of thousands of people, Turkey has initiated a nation-wide Earthquake-preparedness program and mobilized many of 
 its governmental and non-governmental organizations. The goal was to be ready for the next earthquake that was expected to 
-hit Istanbul probably within the next 20 years. The strategic report on natural disasters [JICA 2004] and in particular 
-the disaster prevention and mitigation plan for Istanbul provide detailed guidelines for municipalities. One of the 
+hit Istanbul probably within the next 20 years. The strategic report on natural disasters [2] and in particular 
+the disaster prevention and mitigation plan [3] for Istanbul provide detailed guidelines for municipalities. One of the 
 important items in the guidelines is the allocation of assembly areas. Assembly areas are designated spots 
 where people gather immediately after a disaster. 
 They help minimize the losses due to secondary effects as well as enable proper organization of the recovery activities.
@@ -18,15 +18,14 @@ current location.
 Over the years as the memory of the 1999 Earthquake has faded away, the commitment to fight the next earthquake seems 
 to have also vanished.
 It has been reported by several newspapers that the municipalities were issuing building permits in the reserved assembly areas, 
-which should normally remain as open space and building-free [TODO]. Recently some newspapers reported that 
-Disaster and Emergency Management Authority (AFAD) was hiding information about assembly areas from the public [TODO].
+which should normally remain as open space and building-free [4]. Recently some newspapers reported that 
+Disaster and Emergency Management Authority (AFAD) was hiding information about assembly areas from the public [5].
 At the time of writing, AFAD requires one to send an e-mail with the name and address of the person to get the location
 of the nearest assembly area for that address. It is left to the reader to judge whether this is a good practice to 
 spread such crucial information.
 
-Searching for a dataset of assembly points, I have come across the great work that Municipality of Beylikduzu (Istanbul)
-has done (http://beylikduzuhazir.com). Aside from publishing a comprehensive emergency response plan, they have created a mobile app
-for the citizens to get them prepared for the earthquake. Most importantly, they have provided a web form that shows
+Searching for a dataset of assembly points, we have come across the great work that Municipality of Beylikduzu (Istanbul)
+has done (http://beylikduzuhazir.com). Aside from publishing a comprehensive emergency response plan, they have created a mobile app for the citizens to get them prepared for the earthquake. Most importantly, they have provided a web form that shows
 the assembly point on the map for a given address.
 
 # Goal
@@ -66,8 +65,8 @@ This makes it possible to see all other houses that share the same assembly area
 
 [Go to the map](http://geojson.tools/index.html?url=https://xyz.api.here.com/hub/spaces/OdtvVjSm/search?limit=5000&access_token=xAwk52zn8nbnijis8ZhTBA)
 
-This information is not available elsewhere. I believe this is important because 
-a person can spread this information to her/his neighbors 
+This information is not available elsewhere. We believe this is important because 
+people can spread this information to their neighbors 
 that are assigned to the same assembly area.
 
 ![Addresses assigned to the assembly point P159](https://github.com/derino/assembly_areas/raw/master/imgs/P159.png)
@@ -130,3 +129,9 @@ Konulu Ülke Strateji Raporu”, Ankara.
 3. Japon Uluslararası İşbirliği Ajansı ( JICA) İstanbul Büyükşehir Belediyesi
 (İBB). (2002). Türkiye Cumhuriyeti, İstanbul İli Sismik Mikro-Bölgeleme Dâhil 
 Afet Önleme/Azaltma Temel Planı Çalışması, İstanbul.
+
+4. "İstanbul'da sığınacak yer yok" Cumhuriyet Gazetesi Haber Portali (13 Mayıs 2017)
+http://www.cumhuriyet.com.tr/haber/cevre/740101/istanbul_da_siginacak_yer_yok.html
+
+5. "İstanbul'daki deprem toplanma alanları halktan gizleniyor", Cumhuriyet Gazetesi Haber Portali (17 Ağustos 2017)
+http://www.cumhuriyet.com.tr/haber/turkiye/805778/istanbul_daki_deprem_toplanma_alanlari_halktan_gizleniyor.html
