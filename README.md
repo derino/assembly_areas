@@ -1,8 +1,9 @@
-Locating Safe Assembly Areas: The case of Earthquake preparedness in Beylikduzu, Istanbul
+Locating Safe Assembly Areas: 
+==================
+The case of Earthquake preparedness in Beylikduzu, Istanbul
 ==================
 
-# Story
-
+# Motivation
 Earthquake is the major disaster type in Turkey that accounts for 61% of the collapsed buildings among all disaster 
 types in the last 70 years [1]. In the aftermath of the big Istanbul earthquake on August 17, 1999, which claimed 
 lives of tens of thousands of people, Turkey has initiated a nation-wide Earthquake-preparedness program and mobilized many of 
@@ -40,16 +41,16 @@ such information is not available or made public.
 
 # What has been accomplished
 
-### Created the Beylikduzu dataset by writing a script
+### Created the Beylikduzu dataset
 
-The script uses four REST endpoints from the Municipality of Beylikduzu 
+We have written a script that uses four REST endpoints from the Municipality of Beylikduzu 
 to collect the addresses of around 45'000 houses and the coordinates of 
 the assembly area they are associated to.
 
 Then the coordinates of each address is obtained using the HERE Batch Geocoder API.
 Some heuristics are used to filter out incorrectly geocoded addresses. 
 
-[Link to the dataset]
+[Link to the dataset](https://github.com/derino/assembly_areas/raw/master/data/beylikduzu.zip)
 
 ### A map of assembly points
 
