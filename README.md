@@ -41,7 +41,7 @@ such information is not available or made public.
 
 # What has been accomplished
 
-- Created the Beylikduzu dataset by writing a script
+### Created the Beylikduzu dataset by writing a script
 
 The script uses four REST endpoints from the Municipality of Beylikduzu 
 to collect the addresses of around 45'000 houses and the coordinates of 
@@ -50,25 +50,36 @@ the assembly area they are associated to.
 Then the coordinates of each address is obtained using the HERE Batch Geocoder API.
 Some heuristics are used to filter out incorrectly geocoded addresses. 
 
-[Link to data]
+[Link to the dataset]
 
-- A map of assembly areas
+### A map of assembly points
 
-[Go to map]
+[Go to map](http://geojson.tools/index.html?url=https://xyz.api.here.com/hub/spaces/AEaJeP73/search?limit=5000&access_token=xAwk52zn8nbnijis8ZhTBA)
 
-- A map of every house in Beylikduzu with the assembly area added as a property, thus
-making it possible to see all other houses that share the same assembly area 
+![Beylikduzu assembly points](https://github.com/derino/assembly_areas/raw/master/imgs/beylikduzu_assembly_points.png)
+
+*Assembly points in Beylikduzu*
+
+### A map of every house in Beylikduzu with the assembly area added as a property
+This makes it possible to see all other houses that share the same assembly area 
 (by clicking on the property named "area").
 
-[Go to the map]
+[Go to the map](http://geojson.tools/index.html?url=https://xyz.api.here.com/hub/spaces/OdtvVjSm/search?limit=5000&access_token=xAwk52zn8nbnijis8ZhTBA)
 
 This information is not available elsewhere. I believe this is important because 
 a person can spread this information to her/his neighbors 
 that are assigned to the same assembly area.
 
-- Ability to detect incorrect assignments of houses to assembly areas 
+![Addresses assigned to the assembly point P159](https://github.com/derino/assembly_areas/raw/master/imgs/P159.png)
 
-(TODO: screenshot)
+*Example of addresses assigned to an assembly point*
+
+
+### Ability to detect incorrect assignments of houses to assembly areas 
+
+![Bad assignment](https://github.com/derino/assembly_areas/raw/master/imgs/bad_assignment_example.png)
+
+*Example of bad/distant assignment*
 
 This can be due to a manual error 
 or it can be that some houses are assigned to distant assembly areas in order to 
@@ -79,7 +90,7 @@ comply with the population constraints of an assembly area.
 [Go to map or screenshot]
 
 We observe that there are many overlapping polygons. 
-This is an indication of non-optimal assignment.
+This is an indication of non-optimal house-assembly point association.
 
 - Auto-generation of such polygons by using the map
  
@@ -99,6 +110,11 @@ population per building, height of the buildings (number of floors),
 incomplete building footprints. 
 (note: an assembly area has to be as far as twice the height of any nearby building)
 
+# Acknowledgment
+We would like to thank the HERE team for the following tools:
+- XYZ
+- TMOB
+- Batch Geocoder
 
 # References
 
